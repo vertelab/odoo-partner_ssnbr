@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        
+         <record id="view_ssnbr" model="ir.ui.view">
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="company_id" positon="after"/>
+            <field name="ss_number"/>
+            </field>
+        </record>
+        
+    </data> 
+</openerp>
+    
