@@ -2,8 +2,7 @@
 
 from openerp import models, fields, api, _
 import openerp.tools
-import re
 
-class ssnbr(models.Model):
+class res_partner(models.Model):
     _inherit = 'res.partner'
-    ss_number=fields.Char(String = 'Social Security Number', required=True, size=10)
+    ss_number=fields.Char(string = 'ID-Number', required=False, size=30, help="Social Security Number")
